@@ -65,7 +65,7 @@ readTodo: To read a particular task
 listTodos: To list all tasks
 
 ...............
-prompt: task: ***addTodo***
+prompt: task: addTodo
 
 ...............
 Data-Received
@@ -120,9 +120,9 @@ prompt: deletetask: Add a deleteAll functionality to my app
 
 Task was deleted
 ```
-***Note***: This app is case sensitive at this point, therefore all commands and tasks must be carefully stated. It returns ```Task not found``` if the task does not exist of if it was not well typed.
+**Note** : This app is case sensitive at this point, therefore all commands and tasks must be carefully stated. It returns ```Task not found``` if the task does not exist of if it was not well typed.
 
-*readTodo:
+* readTodo:
 
 The app prompts for the input of one of four commands.
 Enter ```readTodo``` (using the stated casing).
@@ -238,7 +238,7 @@ JM3
 
 ## Authors
 
-* **Olaife Olawore** - *Initial work (https://github.com/chordzz)
+* **Olaife Olawore** - *Initial work* (https://github.com/chordzz)
 
 See also the list of [contributors]
 - Members of Team Javascript M (Wejapa internship 2020)
@@ -246,6 +246,6 @@ See also the list of [contributors]
 
 ## Acknowledgments
 
-* sitepoint.com
-* Inspiration
+* www.sitepoint.com
+* www.vegibit.com
 * etc
