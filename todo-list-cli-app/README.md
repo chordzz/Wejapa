@@ -240,7 +240,7 @@ JM3
 
 * **Olaife Olawore** - *Initial work* (https://github.com/chordzz)
 
-See also the list of [contributors]
+### See also the list of [contributors]
 - Members of Team Javascript M (Wejapa internship 2020)
 
 
