@@ -1,6 +1,6 @@
-# Project Title
+# TO-DO List CLI application with Node.js
 
-One Paragraph of project description goes here
+This is a basic to-do list application that can be built upon to add more custom functions
 
 ## Getting Started
 
@@ -11,26 +11,31 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Give examples
+Node.js version 10.15.3(and above)
+A code editor IDE
+Git and Github
+Installation of all dependencies as stated in the package.json file
+A command-line interface (Git bash or windows cmd etc.)
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+First clone the repository from https://github.com/chordzz/Wejapa.
+Then open your command-line interface and navigate to the folder that contains the "index.js" file.
 
-Say what the step will be
+Next Open the package.json file and install the dependencies as stated in the file by running
+```
+npm install --save dependencyName1 dependencyName2 
+```
+This installs the dependencies needed to run your CLI app
+
+After installing your dependencies, your CLI app is ready to run.
+Give it a spin by running the following command in the Command-line
 
 ```
-Give the example
+node index.js
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+On getting the first prompt, type in ```addTodo``` press enter, then type in any task to your to-do list. When added run ```node index.js ``` again, on getting the prompt this time, type in ```listTodos```. A list of all the tasks on your to-do list will be shown.
 
 ## Running the tests
 
