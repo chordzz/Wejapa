@@ -1,18 +1,22 @@
+//Todo-List Command-Line Application
 
+
+//Requiring various dependencies needed
 const chalk = require('chalk');
 const clear = require('clear');
 const figlet = require('figlet');
 const prompt = require('prompt');
 
-
+//Requiring other file needed
 const todos = require('./todos.js');
 
-//Clears page
+
+//Clears current command-line page
 clear();
 
 
 
-//Creates Banner
+//Creates welcome banner and app name
 console.log(
     chalk.green(
         figlet.textSync('Todo-CLI-App', {
@@ -28,9 +32,7 @@ console.log(
 );
 
 
-
-var command;
-
+//Explains a little on how to use the app
 console.log("Enter one of the following");
 console.log("\n");
 console.log("...............");
@@ -38,6 +40,8 @@ console.log("addTodo: To add a new task\ndeleteTodo: To delete a task\nreadTodo:
 console.log("\n");
 console.log("...............");
 
+
+//creates prompt object responsible for receiving input from user
 var prompt_details = [
     {
         name: "task",
@@ -45,8 +49,13 @@ var prompt_details = [
     }
 ]
 
-//prompt.start();
+//Starts prompting for user input
+prompt.start();
 
+//Command entered is stored in this variable
+var command;
+
+//Getting user input through prompt
 prompt.get(prompt_details, function (err, result) {
     if (err) {
         console.log(err);
@@ -56,6 +65,7 @@ prompt.get(prompt_details, function (err, result) {
         console.log("...............");
         console.log("Data-Received");
         console.log("\n");
+//        gets the command entered from the prompt result object
         command = result.task;
         console.log("Task: " + command);
         console.log("\n");
@@ -63,6 +73,8 @@ prompt.get(prompt_details, function (err, result) {
         console.log("...............");
 
 
+//        checks what command was entered and performs the appropriate action
+        
         if (command === 'addTodo') {
             console.log("\n");
             console.log("Enter your new task: ");

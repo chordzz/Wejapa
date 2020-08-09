@@ -1,9 +1,10 @@
 console.log("Running todos.js");
 
+//imports dependecy
 const fs = require('fs');
 
 
-//add a todo item
+//method to add a todo item
 var addTodo = (title) => {
     var todos = fetchTodos();
     var todo = {
