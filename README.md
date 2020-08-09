@@ -10,13 +10,13 @@ Developers guide.
 This process here should be able to guide you on how to contribute effectively to this project, follow the steps below. You should not be new to the git workflow process however if you still are, the guide should still be able to help you through the process.
 
 Master is the default branch.
-All occurences of Olabode will be your own github username
 
 Fork the repository to generate a copy of your own.
 
 Clone the repository.
 
- git clone hhttps://github.com/chordzz/Wejapa.git
+git clone hhttps://github.com/chordzz/Wejapa.git
+
 Make the original repo the remote upstream (at upstream)
 git remote add upstream https://github.com/chordzz/Wejapa.git
 
